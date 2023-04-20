@@ -1,9 +1,9 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -11,10 +11,10 @@
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
+    #ff871633 0deg,
+    #ff560833 55deg,
+    #ff845433 120deg,
+    #ff000033 160deg,
     transparent 360deg
   );
   --secondary-glow: radial-gradient(
@@ -104,4 +104,50 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.d3 {
+  max-width: 20%;
+  border-radius: 10%;
+  box-shadow: 2px 2px 5px 0px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* opcional, para que los elementos se ajusten automáticamente si no caben en una sola fila */
+}
+
+.item {
+  flex: 1; /* para que todos los elementos tengan el mismo ancho */
+  padding-left: 5px;
+}
+
+.item2 {
+  flex: 1; /* para que todos los elementos tengan el mismo ancho */
+  padding-left: 5px;
+  font-size: 35px;
+  padding-right: 20px;
+  text-align: justify;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.item_image {
+  max-width: 50%;
+}
+
+.slider-container {
+  height: 525px;
+  width: 113%;
+  margin: 0 auto;
+  margin-left: -99px;
+  margin-top: -99px;
+  overflow: hidden;
+}
+
+.slider-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.iten image {
 }
