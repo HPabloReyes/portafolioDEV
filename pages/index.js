@@ -2,10 +2,11 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import Carousel from "../components/slider";
 import Slider from "../components/slider";
-
-const inter = Inter({ subsets: ["latin"] });
+import Skills from "@/components/skils";
+import About from "@/components/about";
+import Projects from "@/components/projects";
+import SocialMedia from "@/components/socialMedia";
 
 export default function Home() {
   return (
@@ -20,8 +21,8 @@ export default function Home() {
           rel="stylesheet"
         ></link>
       </Head>
+      <Slider></Slider>
       <main className={styles.main}>
-        <Slider></Slider>
         <div className={styles.center}>
           <Image
             className={styles.logo}
@@ -29,138 +30,20 @@ export default function Home() {
             alt="hugo logo"
             width={668}
             height={337}
-            priority
+            priority={true}
           />
         </div>
-
+        <Skills></Skills>
         <div className={"container"}>
-          <p className="item2">
-            Mi nombre es <b> Hugo Pablo Reyes González </b> desarrollador web
-            Full Stack. <br></br>
-            Tengo una sólida formación, que me ha permitido generar aplicaciones
-            de manera independiente y también integrado a equipos ocupando
-            metodologías ágiles (SCRUM). En general tengo experiencias de
-            trabajo diversas que me han demostrado la gran adaptabilidad que
-            tengo al momento de integrarme a un nuevo proyecto En todos mis
-            proyectos integro conocimientos full stack, se manejar bases de
-            datos SQL y noSQL , tambien tengo experiencia generando llamadas a
-            apis extrenas a mis APPS y conmbinando su informacion con la de mis
-            bases de datos aplicando en el proceso filtros combinados para
-            ordenar buscar y renderizar la informacion de forma conveniente para
-            el usuario en todo momento.
-          </p>
-
-          <img
-            className="item_image"
-            src="/cetificado.png"
-            alt="Certificado full stack"
-          ></img>
+          <About></About>
         </div>
         <br></br>
-        <div className="container">
-          <img className="item_image" src="/dogs.png" alt="perros"></img>
-          <p className="item2">
-            Acontinuacion dejaré algunos enlaces para que puedas ver algunos de
-            los proyectos en los que eh trabajado, si lo deseas tambien puedes
-            ponerte en contacto conmigo{" "}
-            <a
-              href=""
-              onClick={() => {
-                window.scroll({ top: 0, behavior: "smooth" });
-              }}
-            >
-              <b>a travez de mis redes sociales</b>
-            </a>
-            .
-          </p>
-        </div>
         <br></br>
-        <div className={styles.grid}>
-          <a
-            href="https://3dseller.vercel.app/"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              3D Seller <span>-&gt;</span>
-            </h2>
-            <img
-              className="d3"
-              src="3dSeller.jpg"
-              alt="imagen proyecto 3DSeller"
-              width={500}
-            ></img>
-          </a>
-
-          <a
-            href="https://rhino-gym-x2ar.vercel.app/"
-            target="_blank"
-            className={styles.card}
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Gym admin <span>-&gt;</span>
-            </h2>
-            <img
-              className="d3"
-              src="https://static.vecteezy.com/system/resources/thumbnails/000/539/318/small/hand_with_a_dumbbell.jpg"
-              alt="Imagen GYM"
-              width={500}
-            ></img>
-          </a>
-
-          <a
-            href="https://pi-dogs-main-gold.vercel.app/perros"
-            target="_blank"
-            className={styles.card}
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Dogs app <span>-&gt;</span>
-            </h2>
-            <img
-              className="d3"
-              src="pug2.jpg"
-              alt="Imagen pug"
-              width={500}
-            ></img>
-          </a>
+        <div>
+          <Projects></Projects>
         </div>
-        <div className={styles.description}>
-          <p>
-            <code className={styles.code}>Hola Mundo!</code>
-          </p>
-          <div className="container">
-            <div className="item">
-              <a
-                href="https://www.linkedin.com/in/pablo-reyes-69b32b248/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                By{" "}
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEUKZsL///8AZME7eMgAWb7i6fUAXL/Az+oAYsFjj9B1m9QAYMBGgswAVr0AXb8AWr5ZjdBWh80ZbMTO3PCzx+drl9T2+f2Ssd7G1u0dbsXF1e3w9fs2dsfl7ffV4fIocsaApNmowOSMrNyrw+Wbt+AAUryFqNr2AL+0AAADz0lEQVR4nO3ca1+qMACAcZiA5ATMW+a98vT9P+LROkXiNruMLXae/2v1xyOy6QCjCAAAAAAAAAAAAAAAAAAAALBGnPjeiPbkZSJ36/W4qmSQlbIYTTfxyXx72CXBNYpkv4o/mAwDayx7m7hhWoWUWM2afUebcTiJ5UAReDweo1AS5VAZeNyLgXxQhZxrCo/Hou+NsyJ70AXGcS+EnSgifWC8SHxvngXyzlAYhzCeJqmp8FH63r4fE8IUGC+6P9YI3VTxatP9AzFXz/bvCt8b+GNyT2HX5aov3UEVip4xMO3+SBNlxsJp6Xv7fq5amApn3Z/xzQfivAzgW1tUrPSFDwF8SM1zfiDLisUk5KPwREjN5/QpgKnilbhXrmP0uz/bvxPR9jLwEFDgacm7+Ut/c5v53ijLSvHw4WhMB0Xue4usE2U1vOtv03Qy3e+S8PpeCJlVSZKVgcyCAIDfT+SyrI6Ok0+As4+QVbGbHabLxWTRf7qb7YrMa6XIdZpbpX3k2QPzSuyXjV8rk8dd4i1SjG90bs+3SQx1D7yvH5gnt0vlr830ufK06mNYMW2cl8nUm370/laIYmQ4W3covSwaGAob68FZ/1phudOuiLyYDwoPu9FeoSiejX0nE+H+Z4u1QiHNO/DVfOh8hdJWYT42LLx+NHN9XtlSoVxrL8tpGjheILFTqFmvU7txO6RaKZT5Jz+ir9xeiWSl8M9nBpnayunVqzYKh9eniXNTl8vpVvbhFwOP74nDadFG4RdGmbeXdriibqPwG2budqKnQofXQHgqjIfOhlNfhX1nX958FcaZq53ordDZOXRvhVNXX8DtF87TNP3EDLlyNZpaLlwOxkWSJIWYXX20q4vIrRY+jat/S4tCVmPjBWXuDkSLhave2V02ojDeBxAfHK1n2CvcZs1vYhcXQJxZOhpqrBWqvofpr7fSPOE3F84vTgKcXvze9AxHvy9sFY6U40Zleo6jMxmWChfqHWK8n8PRdGGpULe4lBiWqHZdKtzqRg3TkxwtudkpfNbN3tKwSNWpQu0hJQyrVF0q3GgHftPNcV0qXOp/sBdhFBou6jcMpl0qNNxrmlz8XUMnC/fBFw7067uGG40ptITCGoVqFLaPwhqFahS2j8IahWoUto/CGoVqFLaPwhqFahS2j8IahWoUto/CGoVqFLaPwhqFahS2j8IahWoUto/CGoVqFLaPwlqAhc1/4NHfx2Qq9H7lXhT1dNaNf1HqDc/djt4YrroXa+3rtx1Wb4PWlQfq/zPrWy8PAAAAAAAAAAAAAAAAAAAA4D/0F5lQSZ+5G/qbAAAAAElFTkSuQmCC"
-                  alt="imagen Linkedin"
-                  width={100}
-                ></img>
-              </a>
-            </div>
-            <div className="item">
-              <a
-                href="https://github.com/HPabloReyes"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
-                  alt="Imagen GitHub"
-                  width={50}
-                ></img>
-              </a>
-              <img src="yo.png" alt="imagen de hugo" width={50}></img>
-            </div>
-          </div>
+        <div>
+          <SocialMedia />
         </div>
       </main>
     </>

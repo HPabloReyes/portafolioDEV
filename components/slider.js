@@ -3,16 +3,6 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
 export default function Slider() {
-  // return (
-  //   <motion.div className="slider-container">
-  //     <motion.div className="slider" drag="x" dragConstraints={{ right: 1000 }}>
-  //       {images.map((image) => (
-  //         <motion.div className="iten">{image}</motion.div>
-  //       ))}
-  //     </motion.div>
-  //   </motion.div>
-  // );
-
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
