@@ -4,7 +4,7 @@ import styles from "@/styles/Home.module.css";
 export default function Foter() {
   return (
     <div className="foter-conteiner">
-      <div className="container">
+      <div className="smcontainer">
         <SocialMedia />
       </div>
     </div>

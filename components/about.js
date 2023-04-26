@@ -1,37 +1,63 @@
 import { motion } from "framer-motion";
 import AnimatedText from "./animatedtext";
+import {
+  RiEmpathizeLine,
+  RiMailSendFill,
+  RiComputerFill,
+} from "react-icons/ri";
+import { MdOutlineScience } from "react-icons/md";
+import { GiEcology } from "react-icons/gi";
+import { BsPersonWorkspace } from "react-icons/bs";
 
 const animated1 = (
-  <div className="container">
-    <p className="item2">
-      Hola ! Mi nombre es <b> Hugo Pablo Reyes González </b> desarrollador web
-      Full Stack. <br></br>
-      Tengo una sólida formación, que me ha permitido generar aplicaciones de
-      manera independiente y también integrado a equipos ocupando metodologías
-      ágiles (SCRUM). En general tengo experiencias de trabajo diversas que me
-      han demostrado la gran adaptabilidad que tengo al momento de integrarme a
-      un nuevo proyecto En todos mis proyectos integro conocimientos full stack,
-      se manejar bases de datos SQL y noSQL , tambien tengo experiencia
-      generando llamadas a apis extrenas a mis APPS y conmbinando su informacion
-      con la de mis bases de datos aplicando en el proceso filtros combinados
-      para ordenar buscar y renderizar la informacion de forma conveniente para
-      el usuario en todo momento.
-    </p>
-    <img
-      className="item_image"
-      src="/certificado.png"
-      alt="Certificado full stack"
-    ></img>
+  <div className="">
+    <h1>Sobre Mi </h1>
+    <div className="container">
+      <p className="item2">
+        Hola! Mi nombre es: <b> Hugo Pablo Reyes González. </b> Full Stack
+        Developer. <br></br>
+        Soy una persona curiosa, en la programación encontré un mundo inagotable
+        de posibilidades, retos y satisfacciones y aunque mi carrera es
+        relativamente corta estoy bastante orgulloso de lo que he conseguido y
+        el tiempo en que lo logré, todos los días aprendo algo y estoy listo
+        para afrontar el siguiente desafío!.<br></br>
+        <RiComputerFill />
+      </p>
+      <img className="item_image" src="/yop.jpg" alt="imagin de hugo"></img>
+      <div className="item2">
+        <div className="aptitud-container">
+          <div className="">
+            <RiEmpathizeLine style={{ fill: "#30475E" }} size={35} />
+            <p>Empatia</p>
+          </div>
+          <div>
+            <MdOutlineScience style={{ fill: "#30475E" }} size={35} />
+            <p>Curiosidad</p>
+          </div>
+          <div>
+            <RiMailSendFill style={{ fill: "#30475E" }} size={35} />
+            <p>Comunicacion</p>
+          </div>
+          <div>
+            <GiEcology style={{ fill: "#30475E" }} size={35} />
+            <p>Colaboración</p>
+          </div>
+          <div>
+            <BsPersonWorkspace style={{ fill: "#30475E" }} size={35} />
+            <p>Dedicación</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 );
 
 const animated2 = (
-  <div>
-    <img className="item_image" src="/dogs.png" alt="perros"></img>
+  <div className="">
     <p className="item2">
       Acontinuacion dejaré algunos enlaces para que puedas ver algunos de los
       proyectos en los que eh trabajado, si lo deseas tambien puedes ponerte en
-      contacto conmigo a travez de mis redes sociales .
+      contacto conmigo a travez de mis redes sociales.
     </p>
   </div>
 );
@@ -40,20 +66,10 @@ export default function About() {
   return (
     <div>
       {" "}
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="container"
-      >
+      <motion.div className="container">
         <AnimatedText text={animated1}></AnimatedText>
       </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="container"
-      >
+      <motion.div className="container">
         <AnimatedText text={animated2}></AnimatedText>
       </motion.div>
     </div>
