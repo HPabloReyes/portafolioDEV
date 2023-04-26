@@ -1,12 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Slider from "../components/slider";
 import Skills from "@/components/skils";
 import About from "@/components/about";
 import Projects from "@/components/projects";
 import SocialMedia from "@/components/socialMedia";
+import Foter from "@/components/foter";
 
 export default function Home() {
   return (
@@ -34,18 +34,15 @@ export default function Home() {
           />
         </div>
         <Skills></Skills>
+        <div className="linea-gradiente"></div>
         <div className={"container"}>
           <About></About>
         </div>
-        <br></br>
-        <br></br>
         <div>
           <Projects></Projects>
         </div>
-        <div>
-          <SocialMedia />
-        </div>
       </main>
+      <Foter></Foter>
     </>
   );
 }

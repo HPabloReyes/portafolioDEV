@@ -13,64 +13,65 @@ import {
   SiSequelize,
   SiGit,
 } from "react-icons/si";
+import { motion } from "framer-motion";
 
 export default function Skills() {
   const skills = [
-    <p>
+    <motion.p whileHover={{ scale: 1.2 }}>
       JavaScript <SiJavascript style={{ fill: "#F7DF1E" }} />
       &nbsp;
-    </p>,
-    <p>
+    </motion.p>,
+    <motion.p whileHover={{ scale: 1.2 }}>
       React <SiReact style={{ fill: "#61DAFB" }} />
       &nbsp;
-    </p>,
-    <p>
+    </motion.p>,
+    <motion.p whileHover={{ scale: 1.2 }}>
       Redux <SiRedux style={{ fill: "#764ABC" }} />
       &nbsp;
-    </p>,
-    <p>
+    </motion.p>,
+    <motion.p whileHover={{ scale: 1.2 }}>
       Node <SiNodedotjs style={{ fill: "#3C873A" }} />
       &nbsp;
-    </p>,
-    <p>
+    </motion.p>,
+    <motion.p whileHover={{ scale: 1.2 }}>
       {" "}
       Express <SiExpress style={{ fill: "#000000" }} />
       &nbsp;
-    </p>,
-    <p>
+    </motion.p>,
+    <motion.p whileHover={{ scale: 1.2 }}>
       PostgreSQL <SiPostgresql style={{ fill: "#336791" }} />
       &nbsp;
-    </p>,
-    <p>
+    </motion.p>,
+    <motion.p whileHover={{ scale: 1.2 }}>
       {" "}
       MongoDB <SiMongodb style={{ fill: "#3FA037" }} />
       &nbsp;
-    </p>,
-    <p>
+    </motion.p>,
+    <motion.p whileHover={{ scale: 1.2 }}>
       CSS <SiCss3 style={{ fill: "#1572B6" }} />
       &nbsp;
-    </p>,
-    <p>
+    </motion.p>,
+    <motion.p whileHover={{ scale: 1.2 }}>
       HTML <SiHtml5 style={{ fill: "#E85800" }} />
       &nbsp;
-    </p>,
-    <p>
+    </motion.p>,
+    <motion.p whileHover={{ scale: 1.2 }}>
       Next <SiNextdotjs style={{ fill: "#336791" }} />
       &nbsp;
-    </p>,
-    <p>
+    </motion.p>,
+    <motion.p whileHover={{ scale: 1.2 }}>
       {" "}
       TypeScript <SiTypescript style={{ fill: "#007ACC" }} />
       &nbsp;
-    </p>,
-    <p>
+    </motion.p>,
+    <motion.p whileHover={{ scale: 1.2 }}>
       Sequelize <SiSequelize style={{ fill: "#52B0E7" }} />
       &nbsp;
-    </p>,
-    <p>
+    </motion.p>,
+    <motion.p whileHover={{ scale: 1.2 }}>
       Git <SiGit style={{ fill: "#F05032" }} />
       &nbsp;
-    </p>,
+    </motion.p>,
   ];
 
   return (
