@@ -11,7 +11,7 @@ import { BsPersonWorkspace } from "react-icons/bs";
 
 const animated1 = (
   <div className="">
-    <h1>Sobre Mi </h1>
+    <h1 className="titulo">Sobre Mí </h1>
     <div className="container">
       <p className="item2">
         Hola! Mi nombre es: <b> Hugo Pablo Reyes González. </b> Full Stack
@@ -55,9 +55,9 @@ const animated1 = (
 const animated2 = (
   <div className="">
     <p className="item2">
-      Acontinuacion dejaré algunos enlaces para que puedas ver algunos de los
-      proyectos en los que eh trabajado, si lo deseas tambien puedes ponerte en
-      contacto conmigo a travez de mis redes sociales.
+      A continuación dejaré algunos enlaces para que puedas ver algunos de los
+      proyectos en los que he trabajado, si lo deseas también puedes ponerte en
+      contacto conmigo a través de mis redes sociales.
     </p>
   </div>
 );

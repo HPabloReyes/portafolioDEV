@@ -153,6 +153,12 @@ a {
   padding: 20px 0px 0 0;
   text-align: justify;
   font-family: "Roboto Condensed", sans-serif;
+  margin: auto;
+}
+
+.titulo {
+  margin-top: 20px;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .item_image {
@@ -189,4 +195,54 @@ a {
   background-color: #30475e;
   justify-content: center;
   padding: 7px 0 3px 0;
+}
+
+.prcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  background-color: #ffffffd8;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  height: 168.5px;
+}
+
+.carta-desc {
+  width: 50%;
+  height: 30%;
+  background-color: #30475e;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  opacity: 0.5;
+  border-radius: 0 0 10px 0;
+  transition: all 0.5s ease-out; /* Agregamos una transición para suavizar el cambio de altura */
+  text-align: center;
+  color: #f5f5f500;
+}
+
+.carta-desc p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: larger;
+}
+.centrado {
+  display: flex; /* convierte al contenedor en un contenedor flex */
+  align-items: center; /* alinea los elementos hijos verticalmente en el centro */
+  justify-content: center; /* alinea los elementos hijos horizontalmente en el centro */
+  /* otras propiedades del contenedor */
+  width: 100%;
+  height: 50%;
+}
+
+.imagen2 {
+  width: 50px;
+  height: 50px;
+}
+
+.prcontainer:hover > .carta-desc {
+  height: 100%;
+  color: #f5f5f5;
+  background-color: #f05454;
+  opacity: 1;
 }
