@@ -3,9 +3,6 @@ import styles from "@/styles/Home.module.css";
 export default function SocialMedia() {
   return (
     <div className={styles.description}>
-      {/* <p>
-        <code className={styles.code}>Hola Mundo!</code>
-      </p> */}
       <div className="container">
         <div className="item">
           <a

@@ -23,7 +23,7 @@ const animated1 = (
         para afrontar el siguiente desafío!.<br></br>
         <RiComputerFill />
       </p>
-      <img className="item_image" src="/yop.jpg" alt="imagin de hugo"></img>
+      <img className="item_image" src="/yop.jpg" alt="imagen de hugo"></img>
       <div className="item2">
         <div className="aptitud-container">
           <div className="">
