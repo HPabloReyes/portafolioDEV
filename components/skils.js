@@ -74,9 +74,5 @@ export default function Skills() {
     </motion.p>,
   ];
 
-  return (
-    <div className="">
-      <div className="skills-container">{skills}</div>
-    </div>
-  );
+  return <div className="skills-container">{skills}</div>;
 }
