@@ -5,7 +5,6 @@ import Slider from "../components/slider";
 import Skills from "@/components/skils";
 import About from "@/components/about";
 import Projects from "@/components/projects";
-import SocialMedia from "@/components/socialMedia";
 import Foter from "@/components/foter";
 
 export default function Home() {
