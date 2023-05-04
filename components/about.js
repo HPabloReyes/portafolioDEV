@@ -105,7 +105,7 @@ const animated1 = (
 
 const animated2 = (
   <div>
-    <h1 className="">Propuesta de valor</h1>
+    <h1 className="titulo">Propuesta de valor</h1>
     <FlipCard frontCard={frontFlip0} backCard={backflip0}></FlipCard>
     <FlipCard frontCard={frontFlip1} backCard={backFlip1}></FlipCard>
     <FlipCard frontCard={frontFlip2} backCard={backFlip2}></FlipCard>

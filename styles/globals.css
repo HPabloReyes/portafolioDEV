@@ -126,15 +126,8 @@ a {
 }
 
 .fliped {
+  display: none;
   transition: all 0.5s ease-out; /* Agregamos una transición para suavizar el cambio de altura */
-}
-
-.fliped p {
-  display: none;
-}
-
-.fliped li {
-  display: none;
 }
 
 .skills-container {

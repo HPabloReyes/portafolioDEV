@@ -18,10 +18,12 @@ export default function FlipCard({ frontCard, backCard }) {
       }}
     >
       <motion.div
-        className="card-front"
+        className={"card-front"}
         animate={{ opacity: isFlipped ? 0 : 1 }}
       >
-        <div className="card-container">{frontCard}</div>
+        <div className={!isFlipped ? "card-container" : "fliped"}>
+          {frontCard}
+        </div>
       </motion.div>
       <motion.div
         className="card-back"
