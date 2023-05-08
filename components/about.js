@@ -8,7 +8,6 @@ import FlipCard from "./flipCard";
 
 const frontFlip0 = (
   <div className="starcontainer">
-    <AiTwotoneStar fill={"#ffee00"} size={25} />
     <h2> Experiencia </h2>
   </div>
 );
@@ -29,7 +28,6 @@ const backflip0 = (
 
 const frontFlip1 = (
   <div className="starcontainer">
-    <AiTwotoneStar fill={"#ffee00"} size={25} />
     <h2>Adaptabilidad</h2>
   </div>
 );
@@ -45,7 +43,6 @@ const backFlip1 = (
 
 const frontFlip2 = (
   <div className="starcontainer">
-    <AiTwotoneStar fill={"#ffee00"} size={25} />
     <h2>Comunicacion</h2>
   </div>
 );

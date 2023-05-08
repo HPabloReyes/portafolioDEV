@@ -115,10 +115,17 @@ a {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
   margin: unset;
   transition: all 0.5s ease-out; /* Agregamos una transición para suavizar el cambio de altura */
   margin: 5px;
+}
+.estrella {
+  color: #ffffff;
+}
+
+.card-container:hover {
+  color: #ffffff;
+  background-color: #30475ed8;
 }
 
 .card-container li {
@@ -162,8 +169,6 @@ a {
 }
 
 .left {
-  flex-wrap: nowrap;
-  width: 50%;
 }
 
 .right {
